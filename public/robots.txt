@@ -1,0 +1,13 @@
+# robots.txt
+User-agent: *
+Allow: /
+
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /style/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://alextorres.me/sitemap.xml
