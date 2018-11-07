@@ -12,15 +12,15 @@
   "author": "Alex Torres <aletormat@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@zeit/next-typescript": "^1.1.1",
-    "next": "^7.0.2",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "styled-jsx-plugin-sass": "^0.3.0"
+    "@zeit/next-typescript": "1.1.1",
+    "next": "7.0.2",
+    "react": "16.6.0",
+    "react-dom": "16.6.0",
+    "styled-jsx-plugin-sass": "0.3.0"
   },
   "devDependencies": {
-    "@types/next": "^7.0.3",
-    "@types/styled-jsx": "^2.2.7",
-    "node-sass": "^4.9.4"
+    "@types/next": "7.0.3",
+    "@types/styled-jsx": "2.2.7",
+    "node-sass": "4.10.0"
   }
 }
