@@ -7,7 +7,8 @@
     "dev": "next",
     "build": "next build",
     "prestart": "next build",
-    "start": "next start -p ${PORT}"
+    "start": "next start -p ${PORT}",
+    "postinstall": "npm rebuild"
   },
   "author": "Alex Torres <aletormat@gmail.com>",
   "license": "MIT",
