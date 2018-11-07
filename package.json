@@ -1,15 +1,25 @@
 {
-  "name": "portfolio-alextorres.me",
-  "version": "1.0.0",
-  "description": "My portfolio",
-  "main": "server.js",
+  "name": "alextorres-portfolio",
+  "version": "3.0.0",
+  "description": "A simple portfolio :)",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
-  "author": "Alex Torres",
-  "license": "ISC",
+  "author": "Alex Torres <aletormat@gmail.com>",
+  "license": "MIT",
   "dependencies": {
-    "express": "3.0.0"
+    "@zeit/next-typescript": "^1.1.1",
+    "next": "^7.0.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "styled-jsx-plugin-sass": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/next": "^7.0.3",
+    "@types/styled-jsx": "^2.2.7",
+    "node-sass": "^4.9.4"
   }
 }
