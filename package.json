@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "dokku": "next build && next start"
+    "prestart": "next build",
+    "start": "next start -p ${PORT}"
   },
   "author": "Alex Torres <aletormat@gmail.com>",
   "license": "MIT",
