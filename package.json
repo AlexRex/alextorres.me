@@ -3,6 +3,9 @@
   "version": "3.0.0",
   "description": "A simple portfolio :)",
   "main": "index.js",
+  "engines": {
+    "node": ">=10.17.0"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
