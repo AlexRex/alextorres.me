@@ -36,7 +36,18 @@ export default () => (
         <h1 className="title">Résumé</h1>
         <Entry time="2017 - Now" company="adidas" position="Software Developer">
           <p>
-            Creating new digital products employing <i>cutting-edge</i> technologies.
+            Creating new digital products employing <i>cutting-edge</i> technologies. Mostly in the field of web applications and data processing.
+            <ul>
+              <li>Kubernetes and Docker, Microservices Architectures</li>
+              <li>Typescript, Javascript</li>
+              <li>React, Redux</li>
+              <li>NodeJS, Express</li>
+              <li>Functional Programming</li>
+              <li>Serverless / Lambda</li>
+              <li>Amazon Web Services</li>
+              <li>Kafka</li>
+              <li>ElasticSearch</li>
+            </ul>
           </p>
         </Entry>
 
