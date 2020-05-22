@@ -1,0 +1,21 @@
+body,
+html {
+  font-family: 'Space Mono', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Work Sans', monospace;
+}
+
+#sapper {
+	height: 100%;
+}
