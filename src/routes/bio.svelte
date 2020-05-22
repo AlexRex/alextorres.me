@@ -108,7 +108,7 @@
         etc.
         <br />
         <br />
-        <a href="/bachelor_thesis.pdf">Download papers (Spanish)</a>
+        <a href="/bachelor_thesis.pdf">Download papers (Spanish, 9Mb)</a>
       </p>
     </Entry>
 
