@@ -2,10 +2,10 @@ import posts from './_posts.js';
 
 const lookup = new Map();
 posts.forEach(post => {
-	lookup.set(post.slug, JSON.stringify(post));
+	lookup.set(post.metadata.slug, JSON.stringify(post));
 });
 
-export function get(req, res, next) {
+export const get = (req, res) => {
 	// the `slug` parameter is available because
 	// this file is called [slug].json.js
 	const { slug } = req.params;

@@ -39,9 +39,9 @@
     </p>
     <p>In my spare time I love bikes [🚲] and mountains [⛰].</p>
     <p>
-      You can find me in <Link url='https://www.linkedin.com/in/alejandrotorresmateu/' color='rgba(0, 119, 181, .5)' text="LinkedIn"/>, 
-      <Link url='https://github.com/AlexRex' color='rgba(36, 41, 45, .5)' text="Github"/> and 
-      <Link url='https://medium.com/@aaaaalextorres' color='rgba(20, 142, 106, .3)' text="Medium"/>.
+      You can find me in <Link url='https://www.linkedin.com/in/alejandrotorresmateu/' color='rgba(0, 119, 181, .5)' text="LinkedIn"/> and <Link url='https://github.com/AlexRex' color='rgba(36, 41, 45, .5)' text="Github"/>.
+      
+      I write in <Link url='/til' color='rgba(255, 237, 13, 1)' text="TIL"/>.
     </p>
   </div>
 </div>

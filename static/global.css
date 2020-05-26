@@ -16,6 +16,31 @@ h3 {
   font-family: 'Work Sans', monospace;
 }
 
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
 #sapper {
-	height: 100%;
+  height: 100%;
+}
+
+:root {
+  --a-color: black;
+}
+
+a {
+  color: var(--a-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--a-color);
 }

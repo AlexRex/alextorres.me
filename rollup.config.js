@@ -7,6 +7,9 @@ import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 
+import markdown from '@jackfranklin/rollup-plugin-markdown';
+import glob from 'rollup-plugin-glob';
+
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
@@ -32,6 +35,8 @@ export default {
 				dedupe: ['svelte']
 			}),
 			commonjs(),
+			markdown(),
+			glob(),
 
 			legacy && babel({
 				extensions: ['.js', '.mjs', '.html', '.svelte'],
@@ -74,7 +79,9 @@ export default {
 			resolve({
 				dedupe: ['svelte']
 			}),
-			commonjs()
+			commonjs(),
+			markdown(),
+			glob()
 		],
 		external: Object.keys(pkg.dependencies).concat(
 			require('module').builtinModules || Object.keys(process.binding('natives'))

@@ -1,7 +1,7 @@
 <script>
   import Link from "./Link.svelte";
 
-  const emailAddress = "alejandro.torres.mateu@gmail.com";
+  const emailAddress = "hey@alextorres.me";
   const emailSubject = "Hey Alex! 🥝";
   const emailBody =
     "Hi Alex, I am {YOUR_NAME}, I want to talk to you about [...].";
@@ -45,7 +45,10 @@
       <Link url="/bio" color="rgba(254, 101, 1, 0.7)" text="bio"/>
     </h2>
     <h2>
-      <Link url={mailto} color="rgba(174, 204, 199, 1)" text="contact"/>
+      <Link url="/til" color="rgba(255, 237, 13, 1)" text="til"/>
+    </h2>
+    <h2>
+      <Link url={mailto} color="rgba(174, 204, 199, 1)" text={emailAddress}/>
     </h2>
   </div>
 </nav>
