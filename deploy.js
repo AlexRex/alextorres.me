@@ -10,7 +10,11 @@ ghpages.publish(
       email: 'aletormat@gmail.com'
     }
   },
-  () => {
-    console.log('Deploy Complete!')
+  (err) => {
+    if (err) {
+      console.log(err); 
+    } else {
+      console.log('Deploy Complete!')
+    }
   }
 )
