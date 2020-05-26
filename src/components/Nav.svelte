@@ -4,7 +4,7 @@
   const emailAddress = "hey@alextorres.me";
   const emailSubject = "Hey Alex! 🥝";
   const emailBody =
-    "Hi Alex, I am {YOUR_NAME}, I want to talk to you about [...].";
+    "Hi Alex, I am {YOUR_NAME}, I want to talk to you about something [...].";
 
   const mailto = `mailto:${emailAddress}?subject=${emailSubject}&body=${emailBody}`;
 </script>
