@@ -7,19 +7,16 @@
 // we don't want to create an `/blog/posts` route — the leading
 // underscore tells Sapper not to do that.
 
-import posts from '../../posts/*.md';
+import photos from './_photos.json';
 import { getSlugFromString } from '../../utils';
 
-const formattedPosts = posts.map((post) => {
-  const slug = getSlugFromString(post.metadata.title);
+const formattedPhotos = photos.map((photo) => {
+  const slug = getSlugFromString(photo.id);
 
   return {
-    ...post,
-    metadata: {
-      ...post.metadata,
-      slug
-    }
+    ...photo,
+    slug
   }
-});
+}).reverse();
 
-export default formattedPosts;
+export default formattedPhotos;

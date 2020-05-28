@@ -41,7 +41,7 @@
     <p>
       You can find me in <Link url='https://www.linkedin.com/in/alejandrotorresmateu/' color='rgba(0, 119, 181, .5)' text="LinkedIn"/> and <Link url='https://github.com/AlexRex' color='rgba(36, 41, 45, .5)' text="Github"/>.
       
-      I write in <Link url='/til' color='rgba(255, 237, 13, 1)' text="TIL"/>.
+      I write in <Link url='/til' color='rgba(255, 237, 13, 1)' text="TIL"/> and take pictures in <Link url='/photos' color='rgba(208, 13, 255, 0.5)' text="photos"/>.
     </p>
   </div>
 </div>
