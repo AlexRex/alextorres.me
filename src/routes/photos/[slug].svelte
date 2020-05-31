@@ -17,6 +17,8 @@
   export let photo;
 
   const { metadata } = photo;
+
+  const getOrNotAvailable = (string) => string || 'Not Available';
 </script>
 
 <style>
@@ -47,10 +49,13 @@
 
   .photo {
     margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   img {
-		width: 100%;
+    max-height: 60vh;
   }
 
   .details {
@@ -79,12 +84,12 @@
   <p class="details">
     <span>
       <b>Hardware:</b>
-      {metadata.cameraBrand} {metadata.cameraModel} | {metadata.lensModel}
+      {getOrNotAvailable(metadata.cameraBrand)} {getOrNotAvailable(metadata.cameraModel)} | {getOrNotAvailable(metadata.lensModel)}
     </span>
     <br />
     <span>
       <b>Setup:</b>
-      {metadata.exposure} | {metadata.aperture} | {metadata.iso} | {metadata.focal}
+      {getOrNotAvailable(metadata.exposure)} | {getOrNotAvailable(metadata.aperture)} | {getOrNotAvailable(metadata.iso)} | {getOrNotAvailable(metadata.focal)}
     </span>
     <br />
     <a href={photo.resolutions.original.jpgFile}>

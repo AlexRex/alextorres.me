@@ -39,7 +39,7 @@
 </svelte:head>
 
 <div class="content">
-  <h1>Photos</h1>
+  <h1>Some pictures</h1>
 
   <ul class="gallery">
     {#each photos as photo}

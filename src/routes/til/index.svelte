@@ -45,7 +45,7 @@
 					the user hovers over the link or taps it, instead of
 					waiting for the 'click' event -->
 			<li>
-				<a rel="prefetch" href="til/{post.slug}">{post.title}</a>
+				<a rel="prefetch" href="til/{post.slug}">{post.title}</a> - ({new Date(post.date).toLocaleDateString()})
 				<p class="summary">{post.summary}</p>
 			</li>
 		{/each}

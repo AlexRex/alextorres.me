@@ -25,7 +25,7 @@ So now the turn for Sapper. The steps I did are dead simple:
 This is straight from the template using the exported build (static generated html files, no server side needed).
 It takes 150kB space to download the main page. Funny thing, 45kB are just the fonts from [Google Fonts](https://fonts.google.com/), and 17kB the Favicon. I guess I'll need to cut the size off on that small icon soon...
 
-The same stuff with NextJS takes up to 300kB, doubling the space. It may not look like much more space—a 1 hour movie in any streaming service can be more than 1 GB—but after reading for a while, I am getting more and more concern of how we waste the resources in the digital world, and how we can adapt the so-called ecological digital design. For instance, there's this French Studio called [Fairness.coop](https://fairness.coop/) (in French) which is aiming to develop all of their products in the most sustainable way, so they have the less ecological impact possible. 
+The same stuff with NextJS takes up to 300kB, doubling the space. It may not look like much more space — a 1 hour movie in any streaming service can be more than 1 GB — but after reading for a while, I am getting more and more concern of how we waste the resources in the digital world, and how we can adapt the so-called ecological digital design. For instance, there's this French Studio called [Fairness.coop](https://fairness.coop/) (in French) which is aiming to develop all of their products in the most sustainable way, so they have the less ecological impact possible. 
 
 Coming back to the topic, to be really fair with NextJS: 
 
