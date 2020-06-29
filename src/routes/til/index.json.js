@@ -9,7 +9,7 @@ export function get(req, res) {
 
   const onlyTagged = req.query.tag
     ? contents.filter(({ tags }) => tags.includes(req.query.tag))
-    : contents
+    : contents;
 
   const response = onlyTagged
     .sort((postA, postB) =>
