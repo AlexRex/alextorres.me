@@ -70,6 +70,13 @@
     background-color: initial;
     border: 0;
 	}
+
+  :global(blockquote) {
+    margin-left: 0;
+    border-left: 5px grey solid;
+    padding-left: 40px;
+    background: rgba(0,0,0,0.05);
+  }
 </style>
 
 <svelte:head>

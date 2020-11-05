@@ -1,10 +1,10 @@
 <script>
   import Link from '../components/Link.svelte';
   
-  const emailAddress = "hey@alextorres.me";
-  const emailSubject = "Hey Alex! 🥝";
+  const emailAddress = 'hey@alextorres.me';
+  const emailSubject = 'Hey Alex! 🥝';
   const emailBody =
-    "Hi Alex, I am {YOUR_NAME}, I want to talk to you about something [...].";
+    'Hi Alex, I am {YOUR_NAME}, I want to talk to you about something [...].';
 
   const mailto = `mailto:${emailAddress}?subject=${emailSubject}&body=${emailBody}`;
 </script>
@@ -42,7 +42,7 @@
       I am a passionated software engineer focused on web technologies, coding and
       visual stuff.
       <br />
-      Currently working at adidas, crafting new digital products.
+      Currently working at my own stuff, crafting new and exciting ideas.
     </p>
     <p>In my spare time I love bikes [🚲] and mountains [⛰].</p>
     <p>

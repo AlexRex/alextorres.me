@@ -54,7 +54,7 @@
   </p>
   <h2>Work</h2>
   <p>
-    My internship was the first touch with the
+    My internship at adidas was the first touch with the
     <i>real-life-work®</i>
     , and I really enjoyed it, as I could learn many things that are not taught
     in universities. So just before finishing my studies I got another
@@ -62,22 +62,25 @@
     project, which finally would be part of my Bachelor's Thesis.
   </p>
   <p>
-    This project was related to IoT stuff. I developed a platform (backend,
-    frontend and hardware) to control a series of smart devices spread across
-    the campus with sensors attached. This platform would gather all this data
-    and send it to a third party service inside the university.
-  </p>
-  <p>
     Finally I got back to the starting point, getting a
     <i>real-life-job®</i>
     in adidas, where I am growing as a person and engineer day by day.
+  </p>
+  <p>
+    In July 2020 I decided to get out of the comfort zone and try to build some stuff for myself, take some time
+    to really know what I really want to do in life.
+    Started working as Self Employed in different areas and projects. 
+  </p>
+
+  <p>
+    In September 2020 me and my partner started building a Van.
   </p>
 </div>
 
 <div class="center-block">
   <div class="container">
     <h1 class="title">Résumé</h1>
-    <Entry time="2017 - Now" company="adidas" position="Software Developer">
+    <Entry time="2017 - 2020" company="adidas" position="Software Developer">
       <p>
         Creating new digital products employing
         <i>cutting-edge</i>
