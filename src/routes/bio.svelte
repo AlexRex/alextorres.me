@@ -67,9 +67,7 @@
     in adidas, where I am growing as a person and engineer day by day.
   </p>
   <p>
-    In July 2020 I decided to get out of the comfort zone and try to build some stuff for myself, take some time
-    to really know what I really want to do in life.
-    Started working as Self Employed in different areas and projects. 
+    In July 2020 I decided to get out of the comfort zone and try to build some stuff for myself.
   </p>
 
   <p>
@@ -80,6 +78,13 @@
 <div class="center-block">
   <div class="container">
     <h1 class="title">Résumé</h1>
+    <Entry time="2020-now" company="wetaca" position="Software Engineer">
+      <p>
+        Since December 2020 I am working remotely at <a href="https://wetaca.com">Wetaca</a> as a software engineer.
+
+        Wetaca is an spanish start-up company that aims to help people providing more than 15000 meals every week.
+      </p>
+    </Entry>
     <Entry time="2017 - 2020" company="adidas" position="Software Developer">
       <p>
         Creating new digital products employing
