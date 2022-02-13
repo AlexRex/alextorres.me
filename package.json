@@ -7,8 +7,6 @@
     "export": "sapper export --legacy",
     "start": "node __sapper__/build",
     "start:static": "npm run export && http-serve __sapper__/export",
-    "cy:run": "cypress run",
-    "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",
     "predeploy": "npm run export",
     "deploy": "node deploy.js"

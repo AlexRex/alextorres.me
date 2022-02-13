@@ -21,7 +21,7 @@
 <style>
   .content {
     max-width: 800px;
-    margin: 0 30px 50px 30px;
+    margin: 0 auto;
   }
 
 	.summary {
