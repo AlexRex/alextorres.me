@@ -67,22 +67,36 @@
     in adidas, where I am growing as a person and engineer day by day.
   </p>
   <p>
-    In July 2020 I decided to get out of the comfort zone and try to build some stuff for myself.
-  </p>
-
-  <p>
-    In September 2020 me and my partner started building a Van.
+    In July 2020 I decided to get out of the comfort zone and try to build some stuff for myself. Me and my partner started building a Van.
   </p>
 </div>
 
 <div class="center-block">
   <div class="container">
     <h1 class="title">Résumé</h1>
-    <Entry time="2020-now" company="wetaca" position="Software Engineer">
+        <Entry time="2024-now" company="qatium" position="Product Engineer">
       <p>
-        Since December 2020 I am working remotely at <a href="https://wetaca.com">Wetaca</a> as a software engineer.
+        Contributed to the <b>Open Platform</b> initiative.
+      </p>
 
-        Wetaca is an spanish start-up company that aims to help people providing more than 15000 meals every week.
+        <ul>
+        <li>Designed and implemented the architecture and SDK for running
+        third-party plugins using web technologies, enhancing extensibility
+        and user customization.</li>
+        <li>Created and maintained comprehensive documentation, including
+        SDK Docs, workshops, and example plugins, which improved
+        developer experience and reduced onboarding time.</li>
+        <li>Collaborated in a high-skilled team, employing TDD, Clean</li>
+        <li>Architecture, CI/CD, and XP practices to ensure high-quality software
+        development.</li>
+        </ul>
+    </Entry>
+    <Entry time="2020-2024" company="wetaca" position="Software Engineer">
+      <p>
+        Leading the development process in wetaca. In close contact with product owner and product teams.
+        <br/><br/>
+
+        Working in the architecture revamping and moving to a full AWS infrastructure.
       </p>
     </Entry>
     <Entry time="2017 - 2020" company="adidas" position="Software Developer">

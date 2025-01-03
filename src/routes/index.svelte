@@ -41,8 +41,6 @@
     <p>
       I am a passionated software engineer focused on web technologies, coding and
       visual stuff.
-      <br />
-      Currently working at Wetaca, crafting new and exciting ideas to make people enjoy food. 🍜
     </p>
     <p>In my spare time I love bikes [🚲] and mountains [⛰].</p>
     <p>
