@@ -24,6 +24,11 @@
     min-height: 500px;
     border: 1px solid rgb(240, 237, 220);
   }
+
+  .poster {
+    width: 100%;
+    border: 1px solid rgb(240, 237, 220);
+  }
 </style>
 
 <svelte:head>
@@ -73,6 +78,16 @@
     paradas de autobús reales, y la misma fuente de verdad alimenta el mapa
     interactivo — la web y la calle nunca se contradicen.
   </p>
+  <p>
+    Un ejemplo real, generado por el sistema para una marquesina —
+    <a href="/emt-marquesina.pdf" rel="noopener">abre el PDF completo</a>:
+  </p>
+  <a href="/emt-marquesina.pdf" rel="noopener">
+    <img
+      class="poster"
+      src="/emt-marquesina.png"
+      alt="Infografía de marquesina de la parada 2417: termómetros de las líneas 4, 19, 20 y N3, tarifas y leyenda" />
+  </a>
 
   <h2>Pruébalo</h2>
   <p>
