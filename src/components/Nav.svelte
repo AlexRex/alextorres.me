@@ -38,6 +38,9 @@
       <Link url="/bio" color="rgba(254, 101, 1, 0.7)" text="bio" />
     </h2>
     <h2>
+      <Link url="/services" color="rgba(0, 180, 160, 0.5)" text="services" />
+    </h2>
+    <h2>
       <Link url="/til" color="rgba(255, 237, 13, 1)" text="til" />
     </h2>
     <h2>

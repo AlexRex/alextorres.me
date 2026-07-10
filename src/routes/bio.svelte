@@ -69,12 +69,32 @@
   <p>
     In July 2020 I decided to get out of the comfort zone and try to build some stuff for myself. Me and my partner started building a Van.
   </p>
+  <p>
+    Since 2025 I work as an independent software consultant, building maps,
+    data platforms and custom tools for companies in mobility, transport and
+    sports tech. More about that in <a href="/services">services</a>.
+  </p>
 </div>
 
 <div class="center-block">
   <div class="container">
     <h1 class="title">Résumé</h1>
-        <Entry time="2024-now" company="qatium" position="Product Engineer">
+    <Entry time="2025 - now" company="freelance" position="Independent Software Consultant">
+      <p>
+        Consulting and hands-on development for product companies and public
+        transport operators.
+      </p>
+      <ul>
+        <li>Cooltra — splitting a production vehicle-rental platform:
+        extracting the station-based domain from a Kotlin monolith into its
+        own services and AWS account.</li>
+        <li>EMT — interactive network map library and a browser-based
+        PDF-generation system for printed bus-stop infographics.</li>
+        <li>Annemasse Agglo — geographic transit map with self-hosted vector
+        tiles (MapLibre + PMTiles), no third-party map providers.</li>
+      </ul>
+    </Entry>
+    <Entry time="2024 - 2025" company="qatium" position="Product Engineer">
       <p>
         Contributed to the <b>Open Platform</b> initiative.
       </p>
