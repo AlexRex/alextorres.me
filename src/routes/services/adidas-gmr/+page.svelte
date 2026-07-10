@@ -22,6 +22,11 @@
   <meta
     name="description"
     content="Serverless AWS platform processing IMU sensor data from a wearable: protobuf/avro pipelines, video synchronization, dozens of lambdas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="adidas GMR - sensor data at scale - Alex Torres" />
+  <meta property="og:description" content="Serverless AWS platform processing IMU sensor data from a wearable: protobuf/avro pipelines, video synchronization, dozens of lambdas." />
+  <meta property="og:image" content="https://alextorres.me/og/services.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="description">

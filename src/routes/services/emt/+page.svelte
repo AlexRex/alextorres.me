@@ -36,6 +36,11 @@
   <meta
     name="description"
     content="An embeddable network map library and a browser-based PDF system that prints the infographics at real bus stops." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="EMT - network map and printed infographics - Alex Torres" />
+  <meta property="og:description" content="An embeddable network map library and a browser-based PDF system that prints the infographics at real bus stops." />
+  <meta property="og:image" content="https://alextorres.me/og/emt.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="description">

@@ -30,6 +30,11 @@
   <meta
     name="description"
     content="Consultor de software independiente: mapas interactivos y geodatos, plataformas de datos y herramientas a medida para movilidad, transporte y tecnología deportiva." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Servicios - Alex Torres" />
+  <meta property="og:description" content="Consultor de software independiente: mapas interactivos y geodatos, plataformas de datos y herramientas a medida para movilidad, transporte y tecnología deportiva." />
+  <meta property="og:image" content="https://alextorres.me/og/services.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="description">
@@ -58,6 +63,29 @@
       dominio.
     </li>
   </ul>
+
+  <h2>Cómo trabajo</h2>
+  <ol>
+    <li>
+      <b>Entender primero.</b> Antes de escribir código, mapeo el problema —
+      en una migración eso fueron documentos de arquitectura que el cliente
+      conserva; en un mapa nuevo, los datos de la red y cómo la usa la gente.
+    </li>
+    <li>
+      <b>Algo funcionando, pronto.</b> Una demo en vivo en las primeras
+      semanas, no una presentación. Cada caso de abajo tiene una que puedes
+      abrir.
+    </li>
+    <li>
+      <b>Entregables que puedes usar sin mí.</b> Documentación, modos de
+      edición, salida lista para imprimir. Mi trabajo está hecho cuando tu
+      equipo no me necesita — no cuando se envía la factura.
+    </li>
+  </ol>
+  <p>
+    Acepto proyectos cerrados, colaboraciones continuas y trabajo integrado
+    en tu equipo — en remoto, desde España.
+  </p>
 
   <h2>Proyectos destacados</h2>
 

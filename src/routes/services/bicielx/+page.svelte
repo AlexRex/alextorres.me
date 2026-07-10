@@ -31,6 +31,11 @@
   <meta
     name="description"
     content="Geospatial coverage analysis for a public bike-share network: coverage-deficit heatmap, census population within reach, and a data-backed station proposal." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bicielx - where should the next station go? - Alex Torres" />
+  <meta property="og:description" content="Geospatial coverage analysis for a public bike-share network: coverage-deficit heatmap, census population within reach, and a data-backed station proposal." />
+  <meta property="og:image" content="https://alextorres.me/og/bicielx.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="description">

@@ -36,6 +36,11 @@
   <meta
     name="description"
     content="Una librería de mapa de red embebible y un sistema de PDF basado en navegador que imprime las infografías de las paradas de autobús reales." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="EMT - mapa de red e infografías impresas - Alex Torres" />
+  <meta property="og:description" content="Una librería de mapa de red embebible y un sistema de PDF basado en navegador que imprime las infografías de las paradas de autobús reales." />
+  <meta property="og:image" content="https://alextorres.me/og/emt.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="description">

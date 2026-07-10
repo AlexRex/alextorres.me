@@ -22,6 +22,11 @@
   <meta
     name="description"
     content="Extracting the station-based rental domain from a production Kotlin monolith into its own services and AWS account." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cooltra - splitting a production platform - Alex Torres" />
+  <meta property="og:description" content="Extracting the station-based rental domain from a production Kotlin monolith into its own services and AWS account." />
+  <meta property="og:image" content="https://alextorres.me/og/services.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="description">

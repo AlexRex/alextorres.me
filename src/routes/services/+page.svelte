@@ -30,6 +30,11 @@
   <meta
     name="description"
     content="Independent software consultant: interactive maps and geodata, data platforms, and custom tools for mobility, transport and sports tech." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Services - Alex Torres" />
+  <meta property="og:description" content="Independent software consultant: interactive maps and geodata, data platforms, and custom tools for mobility, transport and sports tech." />
+  <meta property="og:image" content="https://alextorres.me/og/services.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="description">
@@ -57,6 +62,28 @@
       generation, editors for domain data.
     </li>
   </ul>
+
+  <h2>How I work</h2>
+  <ol>
+    <li>
+      <b>Understand first.</b> Before writing code I map the problem — for a
+      migration that meant a full set of architecture documents the client
+      keeps; for a new map, the network data and how riders use it.
+    </li>
+    <li>
+      <b>Something working, early.</b> A live demo in the first weeks, not a
+      slide deck. Every case below has one you can click.
+    </li>
+    <li>
+      <b>Deliverables you can use without me.</b> Documentation, editing
+      modes, print-ready output. My job is done when your team doesn't need
+      me — not when the invoice is sent.
+    </li>
+  </ol>
+  <p>
+    I take fixed-scope projects, ongoing collaborations, and embedded work
+    inside your team — remote, based in Spain.
+  </p>
 
   <h2>Selected work</h2>
 

@@ -31,6 +31,11 @@
   <meta
     name="description"
     content="Interactive geographic map of a transport network with self-hosted vector tiles: MapLibre + PMTiles, no third-party map provider." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Annemasse Agglo - geographic transit map - Alex Torres" />
+  <meta property="og:description" content="Interactive geographic map of a transport network with self-hosted vector tiles: MapLibre + PMTiles, no third-party map provider." />
+  <meta property="og:image" content="https://alextorres.me/og/annemasse.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="description">

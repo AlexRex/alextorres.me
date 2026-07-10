@@ -31,6 +31,11 @@
   <meta
     name="description"
     content="Análisis geoespacial de cobertura de una red de bicicleta pública: mapa de calor de déficit, población censal al alcance y una propuesta de estación respaldada por datos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bicielx - ¿dónde debería ir la próxima estación? - Alex Torres" />
+  <meta property="og:description" content="Análisis geoespacial de cobertura de una red de bicicleta pública: mapa de calor de déficit, población censal al alcance y una propuesta de estación respaldada por datos." />
+  <meta property="og:image" content="https://alextorres.me/og/bicielx.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="description">
