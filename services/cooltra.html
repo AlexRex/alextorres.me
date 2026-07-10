@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="theme-color" content="#333333">
+
+	<link rel="stylesheet" href="../global.css">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans:300,400&display=swap" rel="stylesheet">
+
+	<link rel="icon" type="image/png" href="../favicon.ico">
+
+	<link href="../_app/immutable/entry/start.CWTkPusp.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/d_LyYARk.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CcDzHk-Z.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DdxV4nqT.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CfDKcQ0g.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/OA8UcISh.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DdsNKEoB.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/app.D6c-DGSB.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Bzak7iHL.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BmNKXT5w.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BDT2-L_J.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/0.allR9r_W.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CU7fokU3.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/X8ghRheG.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Dg3rjwEf.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/WHKSxdEk.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BUu4j7Up.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/10.CtzO-KCd.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/C19I4dDQ.js" rel="modulepreload">
+		<!--9hbgq6--><meta name="description" content="Extracting the station-based rental domain from a production Kotlin monolith into its own services and AWS account."/> <meta property="og:type" content="website"/> <meta property="og:title" content="Cooltra - splitting a production platform - Alex Torres"/> <meta property="og:description" content="Extracting the station-based rental domain from a production Kotlin monolith into its own services and AWS account."/> <meta property="og:image" content="https://alextorres.me/og/services.png"/> <meta name="twitter:card" content="summary_large_image"/><!----><title>Cooltra - splitting a production platform - Alex Torres</title>
+		<link href="../_app/immutable/assets/Link.Djw2CiIW.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/0.Cpx2QYze.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/10.DLFXb8o6.css" rel="stylesheet">
+</head>
+
+<body>
+	<div style="display: contents"><!--[--><!--[0--><!--[--><nav class="svelte-1jnx671"><div class="name svelte-1jnx671"><h1><a style="--theme-color: rgba(166, 186, 61, 0.5); --theme-content: &quot;alex torres&quot;" href="/" class="svelte-96nnl8">alex torres</a><!----></h1></div> <div class="links svelte-1jnx671"><h2 class="svelte-1jnx671"><a style="--theme-color: rgba(0, 180, 160, 0.5); --theme-content: &quot;services&quot;" href="/services" class="svelte-96nnl8">services</a><!----></h2> <h2 class="svelte-1jnx671"><a style="--theme-color: rgba(254, 101, 1, 0.7); --theme-content: &quot;bio&quot;" href="/bio" class="svelte-96nnl8">bio</a><!----></h2> <h2 class="svelte-1jnx671"><a style="--theme-color: rgba(255, 237, 13, 1); --theme-content: &quot;til&quot;" href="/til" class="svelte-96nnl8">til</a><!----></h2> <h2 class="svelte-1jnx671"><a style="--theme-color: rgba(208, 13, 255, 0.5); --theme-content: &quot;photos&quot;" href="/photos" class="svelte-96nnl8">photos</a><!----></h2></div></nav><!----> <main class="svelte-12qhfyh"><!--[--><!--[--><div class="description svelte-9hbgq6"><p><a href="/services">← services</a> · <a href="/servicios/cooltra">español</a></p> <h1>Cooltra — splitting a production platform</h1> <h2>The problem</h2> <p>Cooltra's vehicle-rental platform grew as one system serving two different
+    businesses. The station-based rental domain needed to become independent —
+    its own repository, its own services, its own AWS account — without
+    stopping a platform that operates fleets every day.</p> <h2>What I did</h2> <p>Analysis before code. The first deliverable was a set of architecture
+    documents mapping the platform: module graph, domain boundaries, shared
+    libraries, runtime communication, AWS infrastructure, and the risks of
+    every cut. Only then did extraction start, guided by those boundaries.</p> <ul><li>Kotlin backend monorepo, React/TypeScript ops frontend, Next.js
+    customer frontend, Terraform infrastructure.</li> <li>Dependency and coupling analysis to find the extraction boundary
+    with the fewest risks.</li> <li>Incremental extraction: the business kept running on the monolith
+    while the new services took over piece by piece.</li></ul> <h2>The result</h2> <p>The station-based domain runs as its own platform, and the client keeps a
+    written map of their architecture — useful long after the migration.</p></div> <div class="cta svelte-9hbgq6"><p>Have a monolith that needs untangling?
+    Write me at <a href="mailto:hey@alextorres.me?subject=Project inquiry">hey@alextorres.me</a>.</p></div><!--]--><!--]--></main> <div class="svelte-1sr6y3t">2026 Alex Torres</div><!----><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1r2odeb = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.CWTkPusp.js"),
+						import("../_app/immutable/entry/app.D6c-DGSB.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 10],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+</body>
+
+</html>

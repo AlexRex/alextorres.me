@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="theme-color" content="#333333">
+
+	<link rel="stylesheet" href="../global.css">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans:300,400&display=swap" rel="stylesheet">
+
+	<link rel="icon" type="image/png" href="../favicon.ico">
+
+	<link href="../_app/immutable/entry/start.CWTkPusp.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/d_LyYARk.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CcDzHk-Z.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DdxV4nqT.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CfDKcQ0g.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/OA8UcISh.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DdsNKEoB.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/app.D6c-DGSB.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Bzak7iHL.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BmNKXT5w.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BDT2-L_J.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/0.allR9r_W.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CU7fokU3.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/X8ghRheG.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Dg3rjwEf.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/WHKSxdEk.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BUu4j7Up.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/16.BIV-yY0R.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/C19I4dDQ.js" rel="modulepreload">
+		<!--15kukhv--><meta name="description" content="Extracción del dominio de alquiler station-based de un monolito Kotlin en producción a sus propios servicios y cuenta de AWS."/> <meta property="og:type" content="website"/> <meta property="og:title" content="Cooltra - dividir una plataforma en producción - Alex Torres"/> <meta property="og:description" content="Extracción del dominio de alquiler station-based de un monolito Kotlin en producción a sus propios servicios y cuenta de AWS."/> <meta property="og:image" content="https://alextorres.me/og/services.png"/> <meta name="twitter:card" content="summary_large_image"/><!----><title>Cooltra - dividir una plataforma en producción - Alex Torres</title>
+		<link href="../_app/immutable/assets/Link.Djw2CiIW.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/0.Cpx2QYze.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/16.cVJPRh9S.css" rel="stylesheet">
+</head>
+
+<body>
+	<div style="display: contents"><!--[--><!--[0--><!--[--><nav class="svelte-1jnx671"><div class="name svelte-1jnx671"><h1><a style="--theme-color: rgba(166, 186, 61, 0.5); --theme-content: &quot;alex torres&quot;" href="/" class="svelte-96nnl8">alex torres</a><!----></h1></div> <div class="links svelte-1jnx671"><h2 class="svelte-1jnx671"><a style="--theme-color: rgba(0, 180, 160, 0.5); --theme-content: &quot;services&quot;" href="/services" class="svelte-96nnl8">services</a><!----></h2> <h2 class="svelte-1jnx671"><a style="--theme-color: rgba(254, 101, 1, 0.7); --theme-content: &quot;bio&quot;" href="/bio" class="svelte-96nnl8">bio</a><!----></h2> <h2 class="svelte-1jnx671"><a style="--theme-color: rgba(255, 237, 13, 1); --theme-content: &quot;til&quot;" href="/til" class="svelte-96nnl8">til</a><!----></h2> <h2 class="svelte-1jnx671"><a style="--theme-color: rgba(208, 13, 255, 0.5); --theme-content: &quot;photos&quot;" href="/photos" class="svelte-96nnl8">photos</a><!----></h2></div></nav><!----> <main class="svelte-12qhfyh"><!--[--><!--[--><div class="description svelte-15kukhv"><p><a href="/servicios">← servicios</a> · <a href="/services/cooltra">English</a></p> <h1>Cooltra — dividir una plataforma en producción</h1> <h2>El problema</h2> <p>La plataforma de alquiler de vehículos de Cooltra creció como un único
+    sistema sirviendo a dos negocios distintos. El dominio de alquiler
+    station-based necesitaba independizarse — su propio repositorio, sus
+    propios servicios, su propia cuenta de AWS — sin parar una plataforma que
+    opera flotas cada día.</p> <h2>Qué hice</h2> <p>Análisis antes que código. El primer entregable fue un conjunto de
+    documentos de arquitectura que mapeaban la plataforma: grafo de módulos,
+    fronteras de dominio, librerías compartidas, comunicación en runtime,
+    infraestructura AWS y los riesgos de cada corte. Solo entonces empezó la
+    extracción, guiada por esas fronteras.</p> <ul><li>Monorepo backend en Kotlin, frontend de operaciones en
+    React/TypeScript, frontend de cliente en Next.js, infraestructura en
+    Terraform.</li> <li>Análisis de dependencias y acoplamiento para encontrar la frontera de
+    extracción con menos riesgos.</li> <li>Extracción incremental: el negocio siguió funcionando sobre el
+    monolito mientras los nuevos servicios tomaban el relevo pieza a
+    pieza.</li></ul> <h2>El resultado</h2> <p>El dominio station-based funciona como plataforma propia, y el cliente
+    conserva un mapa escrito de su arquitectura — útil mucho después de la
+    migración.</p></div> <div class="cta svelte-15kukhv"><p>¿Tienes un monolito que necesita desenredarse?
+    Escríbeme a <a href="mailto:hey@alextorres.me?subject=Consulta de proyecto">hey@alextorres.me</a>.</p></div><!--]--><!--]--></main> <div class="svelte-1sr6y3t">2026 Alex Torres</div><!----><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1r2odeb = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.CWTkPusp.js"),
+						import("../_app/immutable/entry/app.D6c-DGSB.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 16],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+</body>
+
+</html>

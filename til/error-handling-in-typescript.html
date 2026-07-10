@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="theme-color" content="#333333">
+
+	<link rel="stylesheet" href="../global.css">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans:300,400&display=swap" rel="stylesheet">
+
+	<link rel="icon" type="image/png" href="../favicon.ico">
+
+	<link href="../_app/immutable/entry/start.CWTkPusp.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/d_LyYARk.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CcDzHk-Z.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DdxV4nqT.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CfDKcQ0g.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/OA8UcISh.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DdsNKEoB.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/app.D6c-DGSB.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Bzak7iHL.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BmNKXT5w.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BDT2-L_J.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/0.allR9r_W.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CU7fokU3.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/X8ghRheG.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Dg3rjwEf.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/WHKSxdEk.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BUu4j7Up.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/19.BSmAPQwK.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/GzlLhF5P.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DmkhFONS.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Cx79Tgt0.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Tt9iXPtW.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/C19I4dDQ.js" rel="modulepreload">
+		<!--15siorc--><!----><title>Error handling in Typescript</title>
+		<link href="../_app/immutable/assets/Link.Djw2CiIW.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/0.Cpx2QYze.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/19.DEGcArHo.css" rel="stylesheet">
+</head>
+
+<body>
+	<div style="display: contents"><!--[--><!--[0--><!--[--><nav class="svelte-1jnx671"><div class="name svelte-1jnx671"><h1><a style="--theme-color: rgba(166, 186, 61, 0.5); --theme-content: &quot;alex torres&quot;" href="/" class="svelte-96nnl8">alex torres</a><!----></h1></div> <div class="links svelte-1jnx671"><h2 class="svelte-1jnx671"><a style="--theme-color: rgba(0, 180, 160, 0.5); --theme-content: &quot;services&quot;" href="/services" class="svelte-96nnl8">services</a><!----></h2> <h2 class="svelte-1jnx671"><a style="--theme-color: rgba(254, 101, 1, 0.7); --theme-content: &quot;bio&quot;" href="/bio" class="svelte-96nnl8">bio</a><!----></h2> <h2 class="svelte-1jnx671"><a style="--theme-color: rgba(255, 237, 13, 1); --theme-content: &quot;til&quot;" href="/til" class="svelte-96nnl8">til</a><!----></h2> <h2 class="svelte-1jnx671"><a style="--theme-color: rgba(208, 13, 255, 0.5); --theme-content: &quot;photos&quot;" href="/photos" class="svelte-96nnl8">photos</a><!----></h2></div></nav><!----> <main class="svelte-12qhfyh"><!--[--><!--[--><div class="content svelte-15siorc"><h3 class="svelte-15siorc">8/25/2021 · <!--[--><a href="/til?tag=typescript">#typescript</a>  <a href="/til?tag=software-development">#software-development</a>  <!--]--></h3> <h1 class="svelte-15siorc">Error handling in Typescript</h1> <div class="post-html svelte-15siorc"><!----><pre><code class="language-typescript">const neverFailFunction = (input: number): number =&gt; {
+  if (input === 0) {
+    throw new Error(&#39;Oops, I failed&#39;)
+  }
+
+  return input * 2
+}
+</code></pre>
+<p>One day, you or a colleague are using this function, you check the signature, and you see this <code>(input: number) =&gt; number</code>, so why should this fail?</p>
+<p>Obviously, this is not production code. But these things happens, you write a function that shouldn&#39;t fail, except for that particular edge case, time goes one, you forget about that case, and you use it without a <code>trycatch</code> statement. You might catch the error it somewhere in the stack, probably some layers upwards, and most of the time it&#39;s probably too late, you&#39;re missing a lot of context to treat the error properly.</p>
+<p>So what can we do to improve this? As of today, <a href="https://github.com/microsoft/TypeScript/issues/13219">Typescript is still missing checked exceptions</a></p>
+<p>If we&#39;d had checked exceptions, we could write our function like this:</p>
+<pre><code class="language-typescript">const neverFailFunction = (input: number): number throws Error =&gt; {
+  if (input === 0) {
+    throw new Error(&#39;Oops, I failed&#39;)
+  }
+
+  return input * 2
+}
+</code></pre>
+<p>So we could easily take a look at the signature and know that this function may throw an error <code>(input: number) =&gt; number throws Error</code>. We could even enable a flag in the compiler in order to fail if we don&#39;t wrap throwable functions with <code>trycatch</code> clauses.</p>
+<p>So we will be enforced to treat the error where the error happens, with all the context needed.</p>
+<p>Until this becomes possible, if it ever happens, we can rely on other cool feature of Typescript: <strong>Union Types</strong>.</p>
+<h3>Union Types as Result Types</h3>
+<p>From Typescript documentation:</p>
+<blockquote>
+<p>A union type describes a value that can be one of several types. We use the vertical bar (|) to separate each type, so <code>number | string | boolean</code> is the type of a value that can be a <code>number</code>, a <code>string</code>, or a <code>boolean</code>.</p>
+</blockquote>
+<p>Great! Let&#39;s use this in our function:</p>
+<pre><code class="language-typescript">const neverFailFunction = (input: number): number | Error =&gt; {
+  if (input === 0) {
+    return new Error(&#39;Oops, I failed&#39;)
+  }
+
+  return input * 2
+}
+</code></pre>
+<p>And we can use it like this:</p>
+<pre><code class="language-typescript">const otherFunction = (): void =&gt; {
+  const result = neverFailFunction(1)
+
+  if (result instanceof Error) {
+    return console.error(result.message)
+  }
+
+  console.log(&#39;it worked&#39;, result) // it worked 1
+}
+</code></pre>
+<p>This looks much nicer now. We have the full potential of Typescript, we returned an <code>number | Error</code> but we could be doing something like <code>number | ValidationError | InternalError</code> so we have really specialized errors instead of a generic <code>Error</code>.</p>
+<p>In the project I am currently working on we&#39;re using this approach a lot, but in order to even improve further the developer experience, we added some helper functions to make it easier work with external libraries and our own functions.</p>
+<p>First, we wrapped our functions results into a <code>Result</code> type:</p>
+<pre><code class="language-typescript">export class ApplicationError extends Error {
+  constructor(
+    public readonly errorCode: string,
+    description?: string
+  ) {
+    super(description || errorCode)
+
+    // Need to override the prototype
+    // https://github.com/Microsoft/TypeScript/wiki/Breaking-Changes#extending-built-ins-like-error-array-and-map-may-no-longer-work
+    Object.setPrototypeOf(this, ApplicationError.prototype)
+  }
+}
+
+export const fromError = (error: Error) =&gt; new ApplicationError(&#39;INTERNAL_ERROR&#39;, error.message)
+
+export type Ok&lt;T&gt; = {
+  value: T
+}
+
+export const ok = &lt;T&gt;(data: T): Ok&lt;T&gt; =&gt; ({
+  value: data
+})
+
+export type Result&lt;T, E extends ApplicationError = ApplicationError&gt; = Ok&lt;T&gt; | E
+export type PromiseResult&lt;T, E extends ApplicationError = ApplicationError&gt; = Promise&lt;Result&lt;T, E&gt;&gt;
+
+export const isErrorResult = &lt;T = unknown, E extends ApplicationError = ApplicationError&gt;(result: Result&lt;T, E&gt;): result is E =&gt;
+  &#39;errorCode&#39; in result
+
+export const isOkResult = &lt;T = unknown, E extends ApplicationError = ApplicationError&gt;(result: Result&lt;T, E&gt;): result is Ok&lt;T&gt; =&gt;
+  &#39;value&#39; in result
+</code></pre>
+<p>So our function will become:</p>
+<pre><code class="language-typescript">const neverFailFunction = (input: number): Result&lt;number, ApplicationError&gt; =&gt; {
+  if (input === 0) {
+    return new ApplicationError(&#39;Oops, I failed&#39;)
+  }
+
+  return ok(input * 2)
+}
+
+const otherFunction = (): void =&gt; {
+  const result = neverFailFunction(1)
+
+  if (isErrorResult(result)) {
+    return console.error(result.message)
+  }
+
+  console.log(&#39;it worked&#39;, result.value) // it worked 1
+}
+</code></pre>
+<p>And finally, what if we have a native or 3rd party library that may throw an error? 🤔 Well, we created also some useful helper methods to wrap those functions and translate the output to a result type, even if it throws an error:</p>
+<pre><code class="language-typescript">/**
+ * Expects a function that may throw. If it throws it returns the error passed
+ */
+export const fromAsyncTryCatch = &lt;O extends Error = Error, E extends ApplicationError = ApplicationError&gt;(errorFn: (originalError: O) =&gt; E) =&gt;
+  async &lt;DataType&gt;(fn: () =&gt; Promise&lt;DataType&gt;): PromiseResult&lt;DataType, E&gt; =&gt; {
+    try {
+      const res = await fn()
+
+      return ok&lt;DataType&gt;(res)
+    } catch (catchErr) {
+      return errorFn(catchErr)
+    }
+  }
+
+export const fromTryCatch = &lt;O extends Error = Error, E extends ApplicationError = ApplicationError&gt;(errorFn: (originalError: O) =&gt; E) =&gt;
+  &lt;DataType&gt;(fn: () =&gt; DataType): Result&lt;DataType, E&gt; =&gt; {
+    try {
+      const res = fn()
+
+      return ok&lt;DataType&gt;(res)
+    } catch (catchErr) {
+      return errorFn(catchErr)
+    }
+  }
+</code></pre>
+<p>So for instance, a common thing that throws is <code>JSON.parse</code>, so we could use it as:</p>
+<pre><code class="language-typescript">const parse = &lt;T&gt;(toParse: string): Result&lt;T, ApplicationError&gt; =&gt; fromTryCatch(
+  (error) =&gt; new ApplicationError(&#39;JSON parse failed&#39;, error.message)
+)(() =&gt; JSON.parse(toParse))
+
+const parsedResult = parse&lt;{ foo: number }&gt;(&#39;{&quot;foo&quot;:1}&#39;)
+
+if (isErrorResult(parsedResult)) {
+  return console.log(&#39;hack&#39;)
+}
+
+console.log(parsedResult.value.foo)
+</code></pre>
+<p>And to even make this easier, so we can avoid all the boilerplate, we added one more function:</p>
+<pre><code class="language-typescript">export const effectiveError = fromAsyncTryCatch&lt;Error | ApplicationError, ApplicationError&gt;(
+  (error) =&gt; {
+    if (error instanceof ApplicationError) {
+      return error
+    }
+
+    return fromError(error)
+  }
+)
+</code></pre>
+<p>This is pretty handy, so you don&#39;t even need to think of wrapping your stuff into a Result:</p>
+<pre><code class="language-typescript">const parseAndProcess = &lt;T&gt;(toParse: string): PromiseResult&lt;T, ApplicationError&gt; =&gt;
+  effectiveError(async () =&gt; {
+    const parsedResult = JSON.parse(toParse)
+
+    console.log(parsedResult.foo)
+
+    if (parsedResult.foo === 1) {
+      throw new ApplicationError(&#39;hack&#39;)
+    }
+
+    return parsedResult
+  })
+</code></pre>
+<p>So you don&#39;t really need to care about wrapping or returning <code>Ok</code>, everything in the body of <code>effectiveError</code>, either if you&#39;re throwing or returning a valid result will be wrapped properly.</p>
+<p>You can find all the methods and an example in this gist: <a href="https://gist.github.com/AlexRex/e0a7aaa9246ad35707d4967f28156939">https://gist.github.com/AlexRex/e0a7aaa9246ad35707d4967f28156939</a></p>
+<p>Btw, if you&#39;re not new to functional programming paradigms, you probably noticed this is just a simplification of the Either monad with other name.</p>
+<!----></div></div><!--]--><!--]--></main> <div class="svelte-1sr6y3t">2026 Alex Torres</div><!----><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1r2odeb = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.CWTkPusp.js"),
+						import("../_app/immutable/entry/app.D6c-DGSB.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 19],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+</body>
+
+</html>

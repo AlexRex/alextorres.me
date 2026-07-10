@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="theme-color" content="#333333">
+
+	<link rel="stylesheet" href="../global.css">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans:300,400&display=swap" rel="stylesheet">
+
+	<link rel="icon" type="image/png" href="../favicon.ico">
+
+	<link href="../_app/immutable/entry/start.CWTkPusp.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/d_LyYARk.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CcDzHk-Z.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DdxV4nqT.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CfDKcQ0g.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/OA8UcISh.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DdsNKEoB.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/app.D6c-DGSB.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Bzak7iHL.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BmNKXT5w.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BDT2-L_J.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/0.allR9r_W.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CU7fokU3.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/X8ghRheG.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Dg3rjwEf.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/WHKSxdEk.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BUu4j7Up.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/14.Z5e9sXjn.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/C19I4dDQ.js" rel="modulepreload">
+		<!--1whcao4--><meta name="description" content="Mapa geográfico interactivo de una red de transporte con teselas vectoriales auto-hospedadas: MapLibre + PMTiles, sin proveedor de mapas de terceros."/> <meta property="og:type" content="website"/> <meta property="og:title" content="Annemasse Agglo - mapa geográfico de transporte - Alex Torres"/> <meta property="og:description" content="Mapa geográfico interactivo de una red de transporte con teselas vectoriales auto-hospedadas: MapLibre + PMTiles, sin proveedor de mapas de terceros."/> <meta property="og:image" content="https://alextorres.me/og/annemasse.png"/> <meta name="twitter:card" content="summary_large_image"/><!----><title>Annemasse Agglo - mapa geográfico de transporte - Alex Torres</title>
+		<link href="../_app/immutable/assets/Link.Djw2CiIW.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/0.Cpx2QYze.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/14.CJUuHtbJ.css" rel="stylesheet">
+</head>
+
+<body>
+	<div style="display: contents"><!--[--><!--[0--><!--[--><nav class="svelte-1jnx671"><div class="name svelte-1jnx671"><h1><a style="--theme-color: rgba(166, 186, 61, 0.5); --theme-content: &quot;alex torres&quot;" href="/" class="svelte-96nnl8">alex torres</a><!----></h1></div> <div class="links svelte-1jnx671"><h2 class="svelte-1jnx671"><a style="--theme-color: rgba(0, 180, 160, 0.5); --theme-content: &quot;services&quot;" href="/services" class="svelte-96nnl8">services</a><!----></h2> <h2 class="svelte-1jnx671"><a style="--theme-color: rgba(254, 101, 1, 0.7); --theme-content: &quot;bio&quot;" href="/bio" class="svelte-96nnl8">bio</a><!----></h2> <h2 class="svelte-1jnx671"><a style="--theme-color: rgba(255, 237, 13, 1); --theme-content: &quot;til&quot;" href="/til" class="svelte-96nnl8">til</a><!----></h2> <h2 class="svelte-1jnx671"><a style="--theme-color: rgba(208, 13, 255, 0.5); --theme-content: &quot;photos&quot;" href="/photos" class="svelte-96nnl8">photos</a><!----></h2></div></nav><!----> <main class="svelte-12qhfyh"><!--[--><!--[--><div class="description svelte-1whcao4"><p><a href="/servicios">← servicios</a> · <a href="/services/annemasse">English</a></p> <h1>Annemasse Agglo — mapa geográfico de transporte</h1> <h2>El problema</h2> <p>La red de transporte de la aglomeración de Annemasse necesitaba un mapa
+    geográfico interactivo de sus líneas y paradas. La vía habitual — Google
+    Maps o Mapbox — implica una factura por petición que crece con el tráfico
+    y una dependencia dura de un proveedor externo.</p> <h2>Qué construí</h2> <p>Un mapa dueño de toda su pila. El basemap es un extracto de teselas
+    vectoriales de la región (PMTiles, generado a partir de datos de
+    Protomaps) servido como un único fichero estático — sin servidor de
+    teselas, sin claves de API, sin cuotas de uso. Encima, MapLibre renderiza
+    la red: líneas y paradas superpuestas como SVG, interactivas y con la
+    imagen de marca del operador.</p> <ul><li>MapLibre GL para el renderizado, PMTiles/Protomaps para el basemap.</li> <li>El mapa entero se despliega como ficheros estáticos — puede alojarse
+    en cualquier sitio, incluido un CDN, por céntimos.</li> <li>Un modo de edición para que el operador ajuste los valores por
+    defecto del mapa, excluido del build de producción.</li></ul> <h2>El resultado</h2> <p>Un mapa rápido, interactivo y adaptado a la marca, con cero costes
+    recurrentes de proveedor de mapas.</p> <h2>Pruébalo</h2> <p>El mapa, en vivo — o <a href="https://test-annemasse-interactif.geotoni.fr" rel="noopener">ábrelo a pantalla completa</a>.
+    Diseño gráfico del mapa por <a href="https://geotoni.eu" rel="noopener">Toni</a>.</p></div> <iframe class="map-embed svelte-1whcao4" src="https://test-annemasse-interactif.geotoni.fr" title="Mapa interactivo de transporte de Annemasse Agglo" loading="lazy"></iframe> <div class="cta svelte-1whcao4"><p>¿Pagas demasiado por tus mapas, o sigues con el plano de red en PDF?
+    Escríbeme a <a href="mailto:hey@alextorres.me?subject=Consulta de proyecto">hey@alextorres.me</a>.</p></div><!--]--><!--]--></main> <div class="svelte-1sr6y3t">2026 Alex Torres</div><!----><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1r2odeb = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.CWTkPusp.js"),
+						import("../_app/immutable/entry/app.D6c-DGSB.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 14],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+</body>
+
+</html>
