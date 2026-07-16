@@ -1,8 +1,8 @@
 import"../chunks/Bzak7iHL.js";import"../chunks/CU7fokU3.js";import{al as I,am as a,at as i,ao as o,ar as l,as as d,ak as D,au as k,aq as x,av as w}from"../chunks/DdxV4nqT.js";import{h as P}from"../chunks/C19I4dDQ.js";import{s as $}from"../chunks/CfDKcQ0g.js";import{s as C}from"../chunks/X8ghRheG.js";import{p as S}from"../chunks/BmNKXT5w.js";var A=o('<div class="entry svelte-b18ao8"><div class="time svelte-b18ao8"> </div> <div class="description svelte-b18ao8"><h2 class="position svelte-b18ao8"> </h2> <h3 class="company svelte-b18ao8"> </h3> <!></div></div>');function r(_,s){let u=S(s,"time",8),f=S(s,"position",8),g=S(s,"company",8);var p=A(),c=l(p),y=l(c,!0);d(c);var v=i(c,2),m=l(v),b=l(m,!0);d(m);var h=i(m,2),e=l(h,!0);d(h);var n=i(h,2);C(n,s,"default",{}),d(v),d(p),I(()=>{$(y,u()),$(b,f()),$(e,g())}),a(_,p)}var M=o(`<p>Consulting and hands-on development for product companies and public
-        transport operators.</p> <ul><li>Cooltra — splitting a production vehicle-rental platform:
+        transport operators.</p> <ul><li>Cooltra: splitting a production vehicle-rental platform:
         extracting the station-based domain from a Kotlin monolith into its
-        own services and AWS account.</li> <li>EMT — interactive network map library and a browser-based
-        PDF-generation system for printed bus-stop infographics.</li> <li>Annemasse Agglo — geographic transit map with self-hosted vector
+        own services and AWS account.</li> <li>EMT: interactive network map library and a browser-based
+        PDF-generation system for printed bus-stop infographics.</li> <li>Annemasse Agglo: geographic transit map with self-hosted vector
         tiles (MapLibre + PMTiles), no third-party map providers.</li></ul>`,1),T=o(`<p>Contributed to the <b>Open Platform</b> initiative.</p> <ul><li>Designed and implemented the architecture and SDK for running
         third-party plugins using web technologies, enhancing extensibility
         and user customization.</li> <li>Created and maintained comprehensive documentation, including
