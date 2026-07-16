@@ -41,14 +41,14 @@
 <div class="description">
   <p><a href="/servicios">← servicios</a> · <a href="/services/bicielx">English</a></p>
 
-  <h1>Bicielx — ¿dónde debería ir la próxima estación?</h1>
+  <h1>Bicielx: ¿dónde debería ir la próxima estación?</h1>
 
   <h2>El problema</h2>
   <p>
     Bicielx es la red de bicicleta pública de Elche: 110 estaciones. Decidir
     dónde va la siguiente suele discutirse con opiniones. Yo quería
-    discutirlo con datos — así que construí el análisis por mi cuenta y envié
-    la propuesta al operador. Iniciativa propia, nadie lo pidió.
+    discutirlo con datos, así que construí el análisis por mi cuenta y envié
+    la propuesta al operador. Fue iniciativa propia, nadie lo pidió.
   </p>
 
   <h2>Qué hice</h2>
@@ -58,8 +58,8 @@
     huecos de la red.</li>
     <li>Población al alcance del punto propuesto, calculada con datos
     censales oficiales (INE, a nivel de sección censal con interpolación
-    areal) en lugar de medias de densidad burdas — que resultaron
-    sobreestimar 7×.</li>
+    areal) en lugar de medias de densidad burdas, que resultaron
+    sobreestimar 7 veces.</li>
     <li>Metodología honesta, limitaciones declaradas y la afirmación
     defendible: el punto propuesto está en el ~1% peor cubierto del área
     servida, el hueco más claro del flanco sur de la red.</li>
@@ -75,9 +75,9 @@
 
   <h2>Pruébalo</h2>
   <p>
-    El análisis de cobertura, en vivo — o
+    Aquí tienes el análisis de cobertura. También puedes
     <a href="https://analisis-bicielx.alextorres.me" rel="noopener">
-      ábrelo a pantalla completa</a>.
+      abrirlo a pantalla completa</a>.
   </p>
 </div>
 
@@ -89,7 +89,7 @@
 
 <div class="cta">
   <p>
-    ¿Planificas dónde crecer una red — estaciones, paradas, áreas de
+    ¿Planificas dónde crecer una red de estaciones, paradas o áreas de
     servicio? Escríbeme a <a href={mailto}>{emailAddress}</a>.
   </p>
 </div>

@@ -43,22 +43,22 @@
   <h2>What I do</h2>
   <p>
     I'm an independent software consultant. I build custom software for
-    companies whose product runs on complex data — transport networks, vehicle
+    companies whose product runs on complex data: transport networks, vehicle
     fleets, sensor streams.
   </p>
   <ul>
     <li>
-      <b>Maps and geodata</b> — interactive map libraries, geographic and
+      <b>Maps and geodata:</b> interactive map libraries, geographic and
       schematic network maps, self-hosted vector tiles (no Google/Mapbox
       fees), GTFS tooling.
     </li>
     <li>
-      <b>Data platforms and backend architecture</b> — serverless pipelines on
+      <b>Data platforms and backend architecture:</b> serverless pipelines on
       AWS, splitting monoliths into services, architecture analysis before
       touching a line of code.
     </li>
     <li>
-      <b>Custom tools</b> — internal ops tooling, browser-based PDF/print
+      <b>Custom tools:</b> internal ops tooling, browser-based PDF/print
       generation, editors for domain data.
     </li>
   </ul>
@@ -66,9 +66,9 @@
   <h2>How I work</h2>
   <ol>
     <li>
-      <b>Understand first.</b> Before writing code I map the problem — for a
+      <b>Understand first.</b> Before writing code I map the problem. For a
       migration that meant a full set of architecture documents the client
-      keeps; for a new map, the network data and how riders use it.
+      still keeps; for a new map, the network data and how riders use it.
     </li>
     <li>
       <b>Something working, early.</b> A live demo in the first weeks, not a
@@ -77,18 +77,18 @@
     <li>
       <b>Deliverables you can use without me.</b> Documentation, editing
       modes, print-ready output. My job is done when your team doesn't need
-      me — not when the invoice is sent.
+      me anymore, not when the invoice goes out.
     </li>
   </ol>
   <p>
     I take fixed-scope projects, ongoing collaborations, and embedded work
-    inside your team — remote, based in Spain.
+    inside your team, working remotely from Spain.
   </p>
 
   <h2>Selected work</h2>
 
-  <div class="case">
-    <h3><a href="/services/annemasse">Annemasse Agglo — geographic transit map</a></h3>
+  <!-- <div class="case">
+    <h3><a href="/services/annemasse">Annemasse Agglo: geographic transit map</a></h3>
     <p>
       Interactive map of the transport network with a self-hosted vector
       basemap (MapLibre + PMTiles/Protomaps): no per-request fees, no
@@ -99,17 +99,17 @@
   </div>
 
   <div class="case">
-    <h3><a href="/services/emt">EMT — network map and printed infographics</a></h3>
+    <h3><a href="/services/emt">EMT: network map and printed infographics</a></h3>
     <p>
       An embeddable JavaScript library to explore the bus network's lines and
       stops, and a PDF-generation system that uses the browser as a layout
       engine to print the infographics you see at actual bus stops.
       <a href="https://bus-map.alextorres.me" rel="noopener">See the map live</a>.
     </p>
-  </div>
+  </div> -->
 
   <div class="case">
-    <h3><a href="/services/cooltra">Cooltra — splitting a production platform</a></h3>
+    <h3><a href="/services/cooltra">Cooltra: splitting a production platform</a></h3>
     <p>
       Extracting the station-based rental domain from a Kotlin monolith into
       its own services and AWS account, without stopping the business.
@@ -118,7 +118,7 @@
   </div>
 
   <div class="case">
-    <h3><a href="/services/adidas-gmr">adidas GMR — sensor data at scale</a></h3>
+    <h3><a href="/services/adidas-gmr">adidas GMR: sensor data at scale</a></h3>
     <p>
       Serverless AWS platform processing IMU sensor data from a wearable:
       protobuf/avro pipelines, video synchronization, dozens of lambdas.
@@ -126,7 +126,7 @@
   </div>
 
   <div class="case">
-    <h3><a href="/services/bicielx">Bicielx — where should the next station go?</a></h3>
+    <h3><a href="/services/bicielx">Bicielx: where should the next station go?</a></h3>
     <p>
       Geospatial coverage analysis of a public bike-share network:
       coverage-deficit heatmap, census population within reach, and a

@@ -32,14 +32,14 @@
 <div class="description">
   <p><a href="/services">← services</a> · <a href="/servicios/cooltra">español</a></p>
 
-  <h1>Cooltra — splitting a production platform</h1>
+  <h1>Cooltra: splitting a production platform</h1>
 
   <h2>The problem</h2>
   <p>
     Cooltra's vehicle-rental platform grew as one system serving two different
-    businesses. The station-based rental domain needed to become independent —
-    its own repository, its own services, its own AWS account — without
-    stopping a platform that operates fleets every day.
+    businesses. The station-based rental domain needed to become independent,
+    with its own repository, services and AWS account, without stopping a
+    platform that operates fleets every day.
   </p>
 
   <h2>What I did</h2>
@@ -61,7 +61,8 @@
   <h2>The result</h2>
   <p>
     The station-based domain runs as its own platform, and the client keeps a
-    written map of their architecture — useful long after the migration.
+    written map of their architecture that stays useful long after the
+    migration.
   </p>
 </div>
 

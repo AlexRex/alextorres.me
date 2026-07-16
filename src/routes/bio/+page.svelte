@@ -85,12 +85,12 @@
         transport operators.
       </p>
       <ul>
-        <li>Cooltra — splitting a production vehicle-rental platform:
+        <li>Cooltra: splitting a production vehicle-rental platform:
         extracting the station-based domain from a Kotlin monolith into its
         own services and AWS account.</li>
-        <li>EMT — interactive network map library and a browser-based
+        <li>EMT: interactive network map library and a browser-based
         PDF-generation system for printed bus-stop infographics.</li>
-        <li>Annemasse Agglo — geographic transit map with self-hosted vector
+        <li>Annemasse Agglo: geographic transit map with self-hosted vector
         tiles (MapLibre + PMTiles), no third-party map providers.</li>
       </ul>
     </Entry>

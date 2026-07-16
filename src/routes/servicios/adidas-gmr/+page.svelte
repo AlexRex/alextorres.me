@@ -32,14 +32,14 @@
 <div class="description">
   <p><a href="/servicios">← servicios</a> · <a href="/services/adidas-gmr">English</a></p>
 
-  <h1>adidas GMR — datos de sensores a escala</h1>
+  <h1>adidas GMR: datos de sensores a escala</h1>
 
   <h2>El problema</h2>
   <p>
     adidas GMR metió un sensor de movimiento dentro de una plantilla de bota
     de fútbol. Cada sesión produce flujos de datos IMU en crudo que hay que
-    ingerir, validar, procesar y devolver a un juego móvil — de forma fiable,
-    para una base de usuarios global.
+    ingerir, validar, procesar y devolver a un juego móvil. Y tiene que
+    funcionar de forma fiable para una base de usuarios global.
   </p>
 
   <h2>En qué trabajé</h2>
@@ -58,7 +58,7 @@
 
   <h2>El resultado</h2>
   <p>
-    Un producto de consumo de una marca global, lanzado con EA — y la
+    Un producto de consumo de una marca global, lanzado con EA, y la
     experiencia de construir pipelines de datos que no pueden perder ni una
     sola sesión.
   </p>

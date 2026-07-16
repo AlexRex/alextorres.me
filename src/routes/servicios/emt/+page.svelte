@@ -46,7 +46,7 @@
 <div class="description">
   <p><a href="/servicios">← servicios</a> · <a href="/services/emt">English</a></p>
 
-  <h1>EMT — mapa de red e infografías impresas</h1>
+  <h1>EMT: mapa de red e infografías impresas</h1>
 
   <h2>El problema</h2>
   <p>
@@ -63,13 +63,13 @@
   </p>
   <ul>
     <li>
-      <b>Una librería de mapa embebible</b> — una librería JavaScript (bundle
+      <b>Una librería de mapa embebible:</b> una librería JavaScript (bundle
       de un solo fichero, API en JS plano) que cualquier web del operador
       puede incorporar para renderizar el mapa interactivo de líneas y
       paradas.
     </li>
     <li>
-      <b>Un motor de infografías</b> — el navegador como motor de
+      <b>Un motor de infografías:</b> el navegador como motor de
       maquetación: un sistema de diseño por slots compone la infografía de
       cada parada y poste, y una API la renderiza a PDF listo para imprimir.
       Cuando la red cambia, el material impreso se regenera en lugar de
@@ -81,11 +81,11 @@
   <p>
     Las infografías generadas por este sistema están impresas e instaladas en
     paradas de autobús reales, y la misma fuente de verdad alimenta el mapa
-    interactivo — la web y la calle nunca se contradicen.
+    interactivo, así que la web y la calle nunca se contradicen.
   </p>
   <p>
-    Un ejemplo real, generado por el sistema para una marquesina —
-    <a href="/emt-marquesina.pdf" rel="noopener">abre el PDF completo</a>:
+    Un ejemplo real, generado por el sistema para una marquesina
+    (<a href="/emt-marquesina.pdf" rel="noopener">abre el PDF completo</a>):
   </p>
   <a href="/emt-marquesina.pdf" rel="noopener">
     <img
@@ -96,8 +96,8 @@
 
   <h2>Pruébalo</h2>
   <p>
-    El mapa esquemático de la red, en vivo — o
-    <a href="https://bus-map.alextorres.me" rel="noopener">ábrelo a pantalla completa</a>.
+    Aquí tienes el mapa esquemático de la red. También puedes
+    <a href="https://bus-map.alextorres.me" rel="noopener">abrirlo a pantalla completa</a>.
     Diseño gráfico del mapa por
     <a href="https://geotoni.eu" rel="noopener">Toni</a>.
   </p>

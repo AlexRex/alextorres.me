@@ -32,14 +32,14 @@
 <div class="description">
   <p><a href="/servicios">← servicios</a> · <a href="/services/cooltra">English</a></p>
 
-  <h1>Cooltra — dividir una plataforma en producción</h1>
+  <h1>Cooltra: dividir una plataforma en producción</h1>
 
   <h2>El problema</h2>
   <p>
     La plataforma de alquiler de vehículos de Cooltra creció como un único
     sistema sirviendo a dos negocios distintos. El dominio de alquiler
-    station-based necesitaba independizarse — su propio repositorio, sus
-    propios servicios, su propia cuenta de AWS — sin parar una plataforma que
+    station-based necesitaba independizarse, con su propio repositorio, sus
+    propios servicios y su propia cuenta de AWS, sin parar una plataforma que
     opera flotas cada día.
   </p>
 
@@ -65,8 +65,8 @@
   <h2>El resultado</h2>
   <p>
     El dominio station-based funciona como plataforma propia, y el cliente
-    conserva un mapa escrito de su arquitectura — útil mucho después de la
-    migración.
+    conserva un mapa escrito de su arquitectura que sigue siendo útil mucho
+    después de la migración.
   </p>
 </div>
 

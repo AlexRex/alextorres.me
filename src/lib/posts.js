@@ -7,7 +7,7 @@ const files = import.meta.glob('/src/posts/*.md', {
   eager: true
 });
 
-// ponytail: flat key: value frontmatter only — swap in a YAML parser if posts ever need more
+// ponytail: flat key: value frontmatter only, swap in a YAML parser if posts ever need more
 function parseFrontmatter(raw) {
   const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?/.exec(raw);
   const metadata = {};

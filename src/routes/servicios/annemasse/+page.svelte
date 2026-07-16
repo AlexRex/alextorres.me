@@ -41,29 +41,29 @@
 <div class="description">
   <p><a href="/servicios">← servicios</a> · <a href="/services/annemasse">English</a></p>
 
-  <h1>Annemasse Agglo — mapa geográfico de transporte</h1>
+  <h1>Annemasse Agglo: mapa geográfico de transporte</h1>
 
   <h2>El problema</h2>
   <p>
     La red de transporte de la aglomeración de Annemasse necesitaba un mapa
-    geográfico interactivo de sus líneas y paradas. La vía habitual — Google
-    Maps o Mapbox — implica una factura por petición que crece con el tráfico
-    y una dependencia dura de un proveedor externo.
+    geográfico interactivo de sus líneas y paradas. Las opciones habituales,
+    Google Maps o Mapbox, implican una factura por petición que crece con el
+    tráfico y una dependencia dura de un proveedor externo.
   </p>
 
   <h2>Qué construí</h2>
   <p>
     Un mapa dueño de toda su pila. El basemap es un extracto de teselas
     vectoriales de la región (PMTiles, generado a partir de datos de
-    Protomaps) servido como un único fichero estático — sin servidor de
+    Protomaps) servido como un único fichero estático: sin servidor de
     teselas, sin claves de API, sin cuotas de uso. Encima, MapLibre renderiza
     la red: líneas y paradas superpuestas como SVG, interactivas y con la
     imagen de marca del operador.
   </p>
   <ul>
     <li>MapLibre GL para el renderizado, PMTiles/Protomaps para el basemap.</li>
-    <li>El mapa entero se despliega como ficheros estáticos — puede alojarse
-    en cualquier sitio, incluido un CDN, por céntimos.</li>
+    <li>El mapa entero se despliega como ficheros estáticos, así que puede
+    alojarse en cualquier sitio, incluido un CDN, por céntimos.</li>
     <li>Un modo de edición para que el operador ajuste los valores por
     defecto del mapa, excluido del build de producción.</li>
   </ul>
@@ -76,9 +76,9 @@
 
   <h2>Pruébalo</h2>
   <p>
-    El mapa, en vivo — o
+    Aquí tienes el mapa. También puedes
     <a href="https://test-annemasse-interactif.geotoni.fr" rel="noopener">
-      ábrelo a pantalla completa</a>.
+      abrirlo a pantalla completa</a>.
     Diseño gráfico del mapa por
     <a href="https://geotoni.eu" rel="noopener">Toni</a>.
   </p>

@@ -22,7 +22,7 @@ draft: false
 
 I like to take pictures and I like to share my pictures. I also use like Instagram, but I don't like the feeling when you post a picture, get engaged by the likes, become a zombie scrolling and scrolling forever, feeling like a lot of pictures look similar to others, letting Facebook to **own** your pictures and try to sell you stuff all the time...
 
-And I also guess that sooner or later Instagram will pass away — it happened to many services now. 
+And I also guess that sooner or later Instagram will pass away, it happened to many services already. 
 
 So I want something reliable, no comments, no likes, just to post some pictures on *[the internet](/photos)*.
 

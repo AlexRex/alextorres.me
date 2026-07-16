@@ -32,14 +32,14 @@
 <div class="description">
   <p><a href="/services">← services</a> · <a href="/servicios/adidas-gmr">español</a></p>
 
-  <h1>adidas GMR — sensor data at scale</h1>
+  <h1>adidas GMR: sensor data at scale</h1>
 
   <h2>The problem</h2>
   <p>
     adidas GMR put a motion sensor inside a football insole. Every session
     produces streams of raw IMU data that have to be ingested, validated,
-    processed and served back to a mobile game — reliably, for a global
-    user base.
+    processed and served back to a mobile game. It has to work reliably for
+    a global user base.
   </p>
 
   <h2>What I worked on</h2>
@@ -58,9 +58,9 @@
 
   <h2>The result</h2>
   <p>
-    A consumer product by a global brand, launched with EA — and the
-    experience of building data pipelines that must not lose a single
-    session.
+    A consumer product by a global brand, launched with EA and Google, and the
+    experience of building data pipelines that can't afford to lose a
+    single session.
   </p>
 </div>
 

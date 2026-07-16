@@ -41,27 +41,27 @@
 <div class="description">
   <p><a href="/services">← services</a> · <a href="/servicios/annemasse">español</a></p>
 
-  <h1>Annemasse Agglo — geographic transit map</h1>
+  <h1>Annemasse Agglo: geographic transit map</h1>
 
   <h2>The problem</h2>
   <p>
     The transport network of the Annemasse agglomeration needed an interactive
-    geographic map of its lines and stops. The usual way to build this — Google
-    Maps or Mapbox — means a per-request bill that grows with traffic and a
-    hard dependency on a third-party provider.
+    geographic map of its lines and stops. The usual options, Google Maps or
+    Mapbox, mean a per-request bill that grows with traffic and a hard
+    dependency on a third-party provider.
   </p>
 
   <h2>What I built</h2>
   <p>
     A map that owns its entire stack. The basemap is a vector-tile extract of
     the region (PMTiles, built from Protomaps data) served as a single static
-    file — no tile server, no API keys, no usage fees. On top of it, MapLibre
+    file: no tile server, no API keys, no usage fees. On top of it, MapLibre
     renders the network: lines and stops overlaid as SVG, interactive and
     styled to match the operator's brand.
   </p>
   <ul>
     <li>MapLibre GL for rendering, PMTiles/Protomaps for the basemap.</li>
-    <li>The whole map deploys as static files — it can be hosted anywhere,
+    <li>The whole map deploys as static files, so it can be hosted anywhere,
     including a CDN, for pennies.</li>
     <li>An editing mode for the operator to tune the map's defaults, kept out
     of the production build.</li>
@@ -74,7 +74,7 @@
 
   <h2>Try it</h2>
   <p>
-    The map, live — or
+    Here's the map. You can also
     <a href="https://test-annemasse-interactif.geotoni.fr" rel="noopener">
       open it full screen</a>.
     Map graphic design by

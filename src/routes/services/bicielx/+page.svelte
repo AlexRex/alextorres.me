@@ -41,14 +41,14 @@
 <div class="description">
   <p><a href="/services">← services</a> · <a href="/servicios/bicielx">español</a></p>
 
-  <h1>Bicielx — where should the next station go?</h1>
+  <h1>Bicielx: where should the next station go?</h1>
 
   <h2>The problem</h2>
   <p>
     Bicielx is the public bike-share network of Elche: 110 stations. Deciding
     where the next one goes is usually argued with opinions. I wanted to argue
-    it with data — so I built the analysis myself and sent the proposal to the
-    operator. Self-initiated, nobody asked for it.
+    it with data, so I built the analysis myself and sent the proposal to the
+    operator. This was my own initiative, nobody asked for it.
   </p>
 
   <h2>What I did</h2>
@@ -57,7 +57,7 @@
     point is from its nearest station, revealing the gaps in the network.</li>
     <li>Population within reach of the proposed spot, computed from official
     census data (INE, census-section level with areal interpolation) instead
-    of crude density averages — which turned out to overestimate 7×.</li>
+    of crude density averages, which turned out to overestimate by 7×.</li>
     <li>Honest methodology, stated limitations, and the defensible claim:
     the proposed spot sits in the worst-covered ~1% of the served area, the
     clearest gap on the network's south flank.</li>
@@ -73,7 +73,7 @@
 
   <h2>Try it</h2>
   <p>
-    The coverage analysis, live — or
+    Here's the coverage analysis. You can also
     <a href="https://analisis-bicielx.alextorres.me" rel="noopener">
       open it full screen</a>.
   </p>
@@ -87,7 +87,7 @@
 
 <div class="cta">
   <p>
-    Planning where to grow a network — stations, stops, service areas?
+    Planning where to grow a network of stations, stops or service areas?
     Write me at <a href={mailto}>{emailAddress}</a>.
   </p>
 </div>
