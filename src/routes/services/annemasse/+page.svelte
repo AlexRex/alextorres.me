@@ -75,7 +75,7 @@
   <h2>Try it</h2>
   <p>
     Here's the map. You can also
-    <a href="https://test-annemasse-interactif.geotoni.fr" rel="noopener">
+    <a href="https://annemasse.alextorres.me" rel="noopener">
       open it full screen</a>.
     Map graphic design by
     <a href="https://geotoni.eu" rel="noopener">Toni</a>.
@@ -84,7 +84,7 @@
 
 <iframe
   class="map-embed"
-  src="https://test-annemasse-interactif.geotoni.fr"
+  src="https://annemasse.alextorres.me"
   title="Annemasse Agglo interactive transit map"
   loading="lazy"></iframe>
 

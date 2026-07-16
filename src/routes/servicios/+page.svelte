@@ -96,7 +96,7 @@
       Mapa interactivo de la red de transporte con basemap vectorial
       auto-hospedado (MapLibre + PMTiles/Protomaps): sin coste por petición,
       sin proveedor de mapas de terceros.
-      <a href="https://test-annemasse-interactif.geotoni.fr" rel="noopener">
+      <a href="https://annemasse.alextorres.me" rel="noopener">
         Verlo en vivo</a>.
     </p>
   </div>

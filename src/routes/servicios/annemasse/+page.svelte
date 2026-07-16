@@ -77,7 +77,7 @@
   <h2>Pruébalo</h2>
   <p>
     Aquí tienes el mapa. También puedes
-    <a href="https://test-annemasse-interactif.geotoni.fr" rel="noopener">
+    <a href="https://annemasse.alextorres.me" rel="noopener">
       abrirlo a pantalla completa</a>.
     Diseño gráfico del mapa por
     <a href="https://geotoni.eu" rel="noopener">Toni</a>.
@@ -86,7 +86,7 @@
 
 <iframe
   class="map-embed"
-  src="https://test-annemasse-interactif.geotoni.fr"
+  src="https://annemasse.alextorres.me"
   title="Mapa interactivo de transporte de Annemasse Agglo"
   loading="lazy"></iframe>
 
