@@ -90,7 +90,7 @@
 
   <h2>Proyectos destacados</h2>
 
-  <!-- <div class="case">
+  <div class="case">
     <h3><a href="/servicios/annemasse">Annemasse Agglo: mapa geográfico de transporte</a></h3>
     <p>
       Mapa interactivo de la red de transporte con basemap vectorial
@@ -110,7 +110,7 @@
       ves en las paradas reales.
       <a href="https://bus-map.alextorres.me" rel="noopener">Ver el mapa en vivo</a>.
     </p>
-  </div> -->
+  </div>
 
   <div class="case">
     <h3><a href="/servicios/cooltra">Cooltra: dividir una plataforma en producción</a></h3>

@@ -87,7 +87,7 @@
 
   <h2>Selected work</h2>
 
-  <!-- <div class="case">
+  <div class="case">
     <h3><a href="/services/annemasse">Annemasse Agglo: geographic transit map</a></h3>
     <p>
       Interactive map of the transport network with a self-hosted vector
@@ -106,7 +106,7 @@
       engine to print the infographics you see at actual bus stops.
       <a href="https://bus-map.alextorres.me" rel="noopener">See the map live</a>.
     </p>
-  </div> -->
+  </div>
 
   <div class="case">
     <h3><a href="/services/cooltra">Cooltra: splitting a production platform</a></h3>
